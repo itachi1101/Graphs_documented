@@ -7,7 +7,7 @@ Graphs are used to represent many real-life applications:
      Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. For example Google GPS
      Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender and locale.
 
-                                                          Directed and Undirected Graphs
+                                     Directed and Undirected Graphs
 Directed Graphs: The Directed graphs are such graphs in which edges are directed in a single direction.
 For Example, the below graph is a directed graph:
 
@@ -15,7 +15,7 @@ Undirected Graphs: Undirected graphs are such graphs in which the edges are dire
 Following is an example of an undirected graph with 5 vertices:
 Implementation Is There in the Codes:
 
-                                                         Traversals
+                                                 Traversals
 The Breadth First Traversal or BFS traversal of a graph is similar to that of the Level Order Traversal of Trees.
 The BFS traversal of Graphs also traverses the graph in levels. It starts the traversal with a given vertex, visits all of the vertices adjacent to the initially given vertex and pushes them all to a queue in order of visiting. Then it pops an element from the front of the queue, visits all of its neighbours and pushes the neighbours which are not already visited into the queue and repeats the process until the queue is empty or all of the vertices are visited.
 The BFS traversal uses an auxiliary boolean array say visited[] which keeps track of the visited vertices. That is if visited[i] = true then it means that the i-th vertex is already visited.
