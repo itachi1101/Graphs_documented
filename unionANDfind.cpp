@@ -11,7 +11,7 @@ int Find(int i, int parent[]) {
 void Union(int x, int y, int parent[]) {
 	int s1 = Find(x);
 	int s2 = Find(y);
-	if (s1!s2)
+	if (s1 != s2)
 		parent[s2] = s1;
 }
 
