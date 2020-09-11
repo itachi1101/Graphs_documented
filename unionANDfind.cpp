@@ -1,14 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 /// find for set///
-int Find(int i) {
+int Find(int i, int parent[]) {
 	if (parent[i] == -1)return i;
 	return Find(parent[i]);
 }
 
 
 ///union function//
-void Union(int x, int y) {
+void Union(int x, int y, int parent[]) {
 	int s1 = Find(x);
 	int s2 = Find(y);
 	if (s1!s2)
@@ -21,6 +21,6 @@ int main() {
 	freopen("output.txt", "w", stdout);
 #endif
 
-
+	int *parent = new int [V];
 	return 0;
 }
