@@ -44,9 +44,10 @@ int main() {
     int m, n;
     vector<int>adj[a];
     for (int i = 0; i < b; i++) {
+
         cin >> m >> n;
         adj[m].push_back(n);
-        adj[n].push_back(m);
+
 
     }
     cout << isCyclic(adj, a);
