@@ -17,7 +17,7 @@ void find_comps() {
 		if (!used[i]) {
 			comp.clear();
 			dfs(i);
-			court << "connected:";
+			cout << "connected:";
 			for (size_t j = 0; j < comp.size(); ++j) {
 				cout << " " << comp[j];
 
